@@ -1,0 +1,39 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.buttons {
+  margin-top: -8px;
+  margin-right: -5px;
+  display: flex;
+}
+
+.buttons span {
+  flex: 1;
+}
+
+.label {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mat-form-field-wrapper {
+  padding-bottom: 0 !important;
+}
+
+:host ::ng-deep .mat-form-field-wrapper{
+  margin: 0 !important;
+  padding: 0;
+}
+
+.mat-icon-button  {
+  margin-right: -8px;
+}

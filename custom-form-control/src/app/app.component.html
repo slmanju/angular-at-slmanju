@@ -1,0 +1,9 @@
+<mat-card class="example-input">
+  <mat-card-content>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <app-view-edit-input formControlName="title" veTitle="Title"></app-view-edit-input>
+      <app-view-edit-input formControlName="summary" veTitle="Summary"></app-view-edit-input>
+    </form>
+  </mat-card-content>
+  {{ form.value | json }}
+</mat-card>
